@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: auspify-technologies-task-1-simple-portfolio-site
+    runtime: node
+    buildCommand: npm ci && npm run build
+    startCommand: npm run server
+    healthCheckPath: /api/health
