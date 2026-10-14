@@ -91,7 +91,7 @@ The repository is ready to connect to Render using the included `render.yaml`. A
 - [x] Supplied GLB model integrated in the hero
 - [x] Production build verified with `npm run build`
 - [ ] Public hosting URL
-- [ ] GitHub repository URL
+- [x] GitHub repository URL
 - [ ] Final screenshots / optional walkthrough video
 
 ## Credits

@@ -20,6 +20,7 @@
 - Supplied GLB figure integrated through Three.js
 - Production build verified with `npm run build`
 - README, architecture notes, deployment manifest, and CI workflow
+- Public GitHub repository published at the link above
 
 ## Disclosure
 
