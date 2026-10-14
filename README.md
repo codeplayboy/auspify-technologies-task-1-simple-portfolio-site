@@ -79,7 +79,9 @@ The server reads the hosting provider's `PORT` environment variable and falls ba
 
 Public source repository: [github.com/codeplayboy/auspify-technologies-task-1-simple-portfolio-site](https://github.com/codeplayboy/auspify-technologies-task-1-simple-portfolio-site)
 
-The repository is ready to connect to Render using the included `render.yaml`. A public hosting URL should be added here after the Render service is created and its `/api/health` endpoint has been verified.
+Public static demo: https://codeplayboy.github.io/auspify-technologies-task-1-simple-portfolio-site/
+
+The repository also includes `render.yaml` for the API-backed deployment. GitHub Pages hosts the client demo; Render remains the recommended production host when the Express contact API is required.
 
 ## Assignment delivery checklist
 
@@ -90,7 +92,7 @@ The repository is ready to connect to Render using the included `render.yaml`. A
 - [x] CV download
 - [x] Supplied GLB model integrated in the hero
 - [x] Production build verified with `npm run build`
-- [ ] Public hosting URL
+- [x] Public hosting URL (GitHub Pages client demo)
 - [x] GitHub repository URL
 - [ ] Final screenshots / optional walkthrough video
 

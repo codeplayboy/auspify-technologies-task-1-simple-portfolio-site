@@ -23,7 +23,7 @@ export default function CharacterScene() {
         const rim = new T.PointLight('#2857ff', 4.4, 7); rim.position.set(2.2, 2.4, 2.8); scene.add(rim)
         const ground = new T.Mesh(new T.CircleGeometry(1.7, 64), new T.ShadowMaterial({ opacity: .2 })); ground.rotation.x = -Math.PI / 2; ground.scale.set(1.25, .58, 1); ground.position.y = .02; ground.receiveShadow = true; scene.add(ground)
         const loader = new GLTFLoader(); let model = null; let mixer = null
-        loader.load('/models/arun-reader.glb', gltf => {
+        loader.load(`${import.meta.env.BASE_URL}models/arun-reader.glb`, gltf => {
           if (cancelled) return
           model = gltf.scene
           const box = new T.Box3().setFromObject(model); const size = box.getSize(new T.Vector3()); const center = box.getCenter(new T.Vector3()); const factor = 3.2 / Math.max(size.y, .001)

@@ -7,7 +7,8 @@
 ## Links
 
 - GitHub repository: https://github.com/codeplayboy/auspify-technologies-task-1-simple-portfolio-site
-- Hosting URL: Pending Render connection and deployment
+- Public hosting URL: https://codeplayboy.github.io/auspify-technologies-task-1-simple-portfolio-site/
+- API-backed hosting: Render deployment prepared in `render.yaml`; account connection remains optional for the assignment demo
 
 ## Delivered requirements
 
@@ -21,6 +22,7 @@
 - Production build verified with `npm run build`
 - README, architecture notes, deployment manifest, and CI workflow
 - Public GitHub repository published at the link above
+- Public GitHub Pages demo published through the repository workflow
 
 ## Disclosure
 
