@@ -1,10 +1,23 @@
 # Auspify Technologies Task - 1 (Simple Portfolio Site)
 
+<p align="center">
+  <img src="./public/images/arun-frontpage.png" alt="ARUN.S portfolio editorial cover" width="900" />
+</p>
+
+<p align="center"><strong>An editorial portfolio for a full-stack developer — where product thinking, interface craft, and working software meet.</strong></p>
+
+<p align="center">
+  <a href="https://github.com/codeplayboy/auspify-technologies-task-1-simple-portfolio-site/actions/workflows/ci.yml"><img src="https://github.com/codeplayboy/auspify-technologies-task-1-simple-portfolio-site/actions/workflows/ci.yml/badge.svg" alt="Build status" /></a>
+  <img src="https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=111" alt="React 19" />
+  <img src="https://img.shields.io/badge/Three.js-GLB-black?logo=threedotjs" alt="Three.js" />
+  <img src="https://img.shields.io/badge/Assignment-Auspify%20Task%201-062B8A" alt="Auspify Task 1" />
+</p>
+
 An editorial, responsive personal portfolio website for the Auspify Technologies full-stack development assignment. The site presents Arun S. as a full-stack developer through an art-directed introduction, About profile, Skills and tools, fictional Experience timeline, mock Projects, Process, CV download, and a working Contact flow.
 
 > Portfolio content is intentionally marked as fictional/mock where it represents sample work or experience.
 
-## What is included
+## The experience
 
 - Responsive Home / Introduction section with newspaper-inspired art direction.
 - About section with a full developer introduction and fictional portfolio context.
@@ -22,6 +35,19 @@ An editorial, responsive personal portfolio website for the Auspify Technologies
 
 - React 19, Vite 6, Three.js, GLTFLoader, Express 5, and Lucide React.
 - Responsive CSS with an editorial cobalt-and-paper visual system.
+
+## Project map
+
+| Area | Purpose |
+| --- | --- |
+| `src/App.jsx` | Page structure, project data, experience timeline, contact flow |
+| `src/components/CharacterScene.jsx` | Interactive GLB loading, lighting, shadows, and pointer response |
+| `src/*.css` | Editorial tokens, responsive layout, motion, and component styling |
+| `server/index.js` | Express static server and contact API boundary |
+| `public/models` | Supplied GLB portfolio character |
+| `public/images` | Editorial imagery, project imagery, and identity assets |
+| `render.yaml` | Render deployment definition |
+| `docs/architecture.md` | Implementation and deployment notes |
 
 ## Run locally
 
@@ -48,6 +74,12 @@ The repository includes `render.yaml` for a Render web service:
 - Health check: `/api/health`
 
 The server reads the hosting provider's `PORT` environment variable and falls back to `4101` locally.
+
+## Repository
+
+Public source repository: [github.com/codeplayboy/auspify-technologies-task-1-simple-portfolio-site](https://github.com/codeplayboy/auspify-technologies-task-1-simple-portfolio-site)
+
+The repository is ready to connect to Render using the included `render.yaml`. A public hosting URL should be added here after the Render service is created and its `/api/health` endpoint has been verified.
 
 ## Assignment delivery checklist
 

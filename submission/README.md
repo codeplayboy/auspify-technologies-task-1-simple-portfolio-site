@@ -1,14 +1,32 @@
-# Task 1 submission package
+# Task 1 submission — Personal Portfolio Website
 
-This folder is reserved for the final internship handoff.
+## Project
 
-Before submitting externally, add:
+**Auspify Technologies Task - 1 (Simple Portfolio Site)**
 
-- `screenshots/desktop-home.png`
-- `screenshots/mobile-home.png`
-- `screenshots/projects.png`
-- `screenshots/contact.png`
-- the deployed URL
-- the GitHub repository URL
+## Links
 
-The source project is the parent directory. The optional demonstration videos are kept in the project-level `brag-output-*` folders.
+- GitHub repository: https://github.com/codeplayboy/auspify-technologies-task-1-simple-portfolio-site
+- Hosting URL: Pending Render connection and deployment
+
+## Delivered requirements
+
+- Responsive personal portfolio experience
+- Introduction, About, Skills, Experience, Projects, Process, and Contact sections
+- Project showcase with interactive mock case-study dialogs
+- Contact form with loading, success, and error states
+- Express API boundary and health endpoint
+- CV download section
+- Supplied GLB figure integrated through Three.js
+- Production build verified with `npm run build`
+- README, architecture notes, deployment manifest, and CI workflow
+
+## Disclosure
+
+The project names, company names, experience timeline, and case-study outcomes are mock portfolio content created for the assignment. They should be replaced with verified information before professional publication.
+
+## Special thanks
+
+Special thanks to **Auspify Technologies** for giving me the opportunity to complete this full-stack development task and for providing a brief that encouraged both technical depth and visual presentation.
+
+`#Auspify` `#AuspifyTechnologies` `#AuspifyInternship` `#AuspifyProjects`
