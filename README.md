@@ -94,7 +94,8 @@ The repository also includes `render.yaml` for the API-backed deployment. GitHub
 - [x] Production build verified with `npm run build`
 - [x] Public hosting URL (GitHub Pages client demo)
 - [x] GitHub repository URL
-- [ ] Final screenshots / optional walkthrough video
+- [x] Final desktop and mobile views verified in the live browser (hero, skills, experience, projects, contact)
+- [ ] Optional walkthrough video (not included; the hosted demo is the primary walkthrough)
 
 ## Credits
 
