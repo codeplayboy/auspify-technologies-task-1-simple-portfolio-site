@@ -1,0 +1,1 @@
+import React from 'react';import{createRoot}from'react-dom/client';import App from'./App';import'./styles.css';import'./overrides.css';import'./portfolio-complete.css';import'./art-direction.css';import'./responsive-fix.css';import'./newspaper-header.css';createRoot(document.getElementById('root')).render(<App/>);
