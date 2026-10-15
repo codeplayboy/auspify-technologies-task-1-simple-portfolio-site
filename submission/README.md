@@ -6,7 +6,7 @@
 
 ## Individual submission
 
-This project was conceived, designed, implemented, documented, tested, and prepared for delivery by Arun S. as an individual submission. The visual system, React interface, responsive behavior, Three.js character scene, Express contact boundary, deployment configuration, and optional walkthrough video are part of the same solo project.
+This project was conceived, designed, implemented, documented, tested, and prepared for delivery by Rashad as an individual submission. Arun S. / ARUN.S is the fictional portfolio persona used for the mock site; Rashad is the real creator and submitter. The visual system, React interface, responsive behavior, Three.js character scene, Express contact boundary, deployment configuration, and optional walkthrough video are part of the same solo project.
 
 ## Links
 
