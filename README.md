@@ -100,8 +100,18 @@ The repository also includes `render.yaml` for the API-backed deployment. GitHub
 - [x] Production build verified with `npm run build`
 - [x] Public hosting URL (GitHub Pages client demo)
 - [x] GitHub repository URL
+- [x] Final screenshots — [desktop](./docs/screenshots/task-1-desktop.jpg) and [mobile](./docs/screenshots/task-1-mobile.jpg)
 - [x] Final desktop and mobile views verified in the live browser (hero, skills, experience, projects, contact)
 - [x] Optional walkthrough video — [ARUN.S launch film](./docs/media/arun-s-launch-film.mp4)
+
+## Final screenshots
+
+The delivery package includes captures of the deployed portfolio at two review sizes:
+
+| View | Capture |
+| --- | --- |
+| Desktop | [Open desktop screenshot](./docs/screenshots/task-1-desktop.jpg) |
+| Mobile | [Open mobile screenshot](./docs/screenshots/task-1-mobile.jpg) |
 
 ## Launch film
 
