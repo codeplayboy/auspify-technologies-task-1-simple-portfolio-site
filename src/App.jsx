@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { ArrowRight, ArrowUpRight, Check, Download, Github, Linkedin, Mail, MapPin, Send, X } from 'lucide-react'
 import CharacterScene from './components/CharacterScene'
 
@@ -32,6 +32,7 @@ export default function App() {
   const [sent, setSent] = useState(false)
   const [sending, setSending] = useState(false)
   const [formError, setFormError] = useState('')
+  const closeProjectRef = useRef(null)
   const experiences = [
     ['Full-stack developer', 'Northstar Systems · Colombo · 2025—Present', 'NORTH / 01'],
     ['Frontend engineer', 'Morrow Labs · Remote · 2024—2025', 'MORROW / 02'],
@@ -81,6 +82,22 @@ export default function App() {
     }
   }, [])
 
+  useEffect(() => {
+    if (!selectedProject) return undefined
+    const previousOverflow = document.body.style.overflow
+    document.body.style.overflow = 'hidden'
+    const focusFrame = window.requestAnimationFrame(() => closeProjectRef.current?.focus())
+    const onKeyDown = event => {
+      if (event.key === 'Escape') setSelectedProject(null)
+    }
+    window.addEventListener('keydown', onKeyDown)
+    return () => {
+      window.cancelAnimationFrame(focusFrame)
+      document.body.style.overflow = previousOverflow
+      window.removeEventListener('keydown', onKeyDown)
+    }
+  }, [selectedProject])
+
   return <main>
     <nav className="site-nav"><a className="brand-lockup" href="#intro"><img src={asset('/images/arun-mark.png')} alt=""/><b>ARUN<span>.S</span></b></a><div className="nav-links"><a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div><a className="nav-cta" href="#contact">Let’s talk <ArrowUpRight size={14}/></a></nav>
 
@@ -93,13 +110,13 @@ export default function App() {
 
     <section id="experience" className="pinned-story"><div className="section-label"><span>04</span><p className="eyebrow">EXPERIENCE / PAST WORK · FICTIONAL TIMELINE</p></div><div className="story-frame"><div className="story-title"><span>CAREER / {experiences[chapter][2]}</span><h2>{experiences[chapter][0]}</h2><p>{experiences[chapter][1]}. Building full-stack product surfaces, API boundaries, and visual systems that make complex work feel coherent.</p></div><div className={`story-art art-${chapter}`}><span>{String(chapter + 1).padStart(2, '0')}</span><img src="https://images.unsplash.com/photo-1637249769470-3c4f4506a263?auto=format&fit=crop&w=900&q=85" alt="Blue-lit creative workspace with a developer at a desk"/><b>{chapter === 0 ? 'N' : chapter === 1 ? 'M' : 'F'}</b></div></div><div className="story-controls">{experiences.map((item, index) => <button className={chapter === index ? 'active' : ''} onClick={() => setChapter(index)} key={item[2]}>{item[2]}</button>)}</div></section>
 
-    <section id="projects" className="work projects-section"><div className="section-label"><span>05</span><p className="eyebrow">PROJECTS / MOCK BUILDS</p></div><div className="projects-heading"><h2>Three complete<br/>product stories.</h2><p className="body-copy">Fictional end-to-end builds for finance, learning, and academic operations. Each project is a mock case study with a clear product problem, interface direction, and full-stack point of view.</p></div><div className="project-rail"><div><span>01 / DOMAINS</span><strong>Finance · learning · operations</strong></div><div><span>02 / SCOPE</span><strong>Flows · states · responsive UI</strong></div><div><span>03 / BUILD LENS</span><strong>React · Node · accessible systems</strong></div></div><div className="project-list">{projects.map(project => <article className="project project-button" key={project.number} role="button" tabIndex="0" onClick={() => setSelectedProject(project)} onKeyDown={event => { if (event.key === 'Enter' || event.key === ' ') setSelectedProject(project) }}><span>{project.number}</span><div><small>{project.type}</small><h3>{project.title}</h3><p>{project.description}</p><em>{project.meta}</em></div><img src={project.image} alt=""/><ArrowUpRight/></article>)}</div></section>
+    <section id="projects" className="work projects-section"><div className="section-label"><span>05</span><p className="eyebrow">PROJECTS / MOCK BUILDS</p></div><div className="projects-heading"><h2>Three complete<br/>product stories.</h2><p className="body-copy">Fictional end-to-end builds for finance, learning, and academic operations. Each project is a mock case study with a clear product problem, interface direction, and full-stack point of view.</p></div><div className="project-rail"><div><span>01 / DOMAINS</span><strong>Finance · learning · operations</strong></div><div><span>02 / SCOPE</span><strong>Flows · states · responsive UI</strong></div><div><span>03 / BUILD LENS</span><strong>React · Node · accessible systems</strong></div></div><div className="project-list">{projects.map(project => <article className="project project-button" key={project.number} role="button" tabIndex="0" onClick={() => setSelectedProject(project)} onKeyDown={event => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); setSelectedProject(project) } }}><span>{project.number}</span><div><small>{project.type}</small><h3>{project.title}</h3><p>{project.description}</p><em>{project.meta}</em></div><img src={project.image} alt=""/><ArrowUpRight/></article>)}</div></section>
 
     <section className="process-section"><div className="section-label"><span>06</span><p className="eyebrow">PROCESS / HOW I WORK</p></div><div className="process-grid"><h2>Good work is a sequence of clear decisions.</h2><div className="process-steps"><div><b>01 / FRAME</b><p>Find the real problem beneath the brief and define what success should feel like.</p></div><div><b>02 / SHAPE</b><p>Make the flow visible with prototypes, content, states, and a visual language.</p></div><div><b>03 / BUILD</b><p>Ship the system with clean code, useful feedback, and room for the next version.</p></div></div></div></section>
 
     <section id="contact" className="contact contact-section"><div className="section-label"><span>07</span><p className="eyebrow">CONTACT / START A CONVERSATION</p></div><div className="contact-grid"><div><h2>Have a good<br/><i>problem?</i></h2><p className="body-copy">Tell me what you’re trying to make clearer, faster, or more useful. I’ll get back to you within two working days.</p><a className="email" href="mailto:hello@auspify.dev"><Mail size={17}/> hello@auspify.dev</a><div className="socials"><a href="https://github.com" aria-label="GitHub"><Github size={17}/></a><a href="https://linkedin.com" aria-label="LinkedIn"><Linkedin size={17}/></a></div></div><form className="contact-form" onSubmit={submitContact}>{sent ? <div className="sent-state"><Check size={22}/><h3>Message sent.</h3><p>Thanks — I’ll be in touch soon.</p><button type="button" onClick={() => { setSent(false); setFormError('') }}>Send another</button></div> : <>{formError && <p className="form-error" role="alert">{formError}</p>}<label>Name<input name="name" required placeholder="Your name"/></label><label>Email<input name="email" required type="email" placeholder="you@company.com"/></label><label>What are you building?<textarea name="message" required rows="4" placeholder="A product, a system, a good problem..."/></label><button className="submit" type="submit" disabled={sending}>{sending ? 'Sending…' : 'Send inquiry'} {!sending && <Send size={15}/>}</button></>}</form></div></section>
 
     <footer><a className="brand-lockup" href="#intro"><img src={asset('/images/arun-mark.png')} alt=""/><b>ARUN<span>.S</span></b></a><span>© 2026 · Built with curiosity and care.</span><a href="#intro">Back to top ↑</a></footer>
-    {selectedProject && <div className="case-study-backdrop" role="presentation" onClick={() => setSelectedProject(null)}><article className="case-study" role="dialog" aria-modal="true" aria-label={`${selectedProject.title} case study`} onClick={event => event.stopPropagation()}><button className="case-close" aria-label="Close case study" onClick={() => setSelectedProject(null)}><X size={18}/></button><img src={selectedProject.image} alt=""/><div className="case-copy"><p className="eyebrow">{selectedProject.number} / {selectedProject.meta}</p><h2>{selectedProject.title}</h2><p>{selectedProject.detail}</p><div className="case-tags">{selectedProject.tags.map(tag => <span key={tag}>{tag}</span>)}</div><strong><ArrowRight size={16}/> {selectedProject.outcome}</strong></div></article></div>}
+    {selectedProject && <div className="case-study-backdrop" role="presentation" onClick={() => setSelectedProject(null)}><article className="case-study" role="dialog" aria-modal="true" aria-labelledby="case-study-title" aria-describedby="case-study-detail" onClick={event => event.stopPropagation()}><button ref={closeProjectRef} className="case-close" aria-label="Close case study" onClick={() => setSelectedProject(null)}><X size={18}/></button><div className="case-media"><img src={selectedProject.image} alt={`${selectedProject.title} project concept`}/><span>CASE FILE / {selectedProject.number}</span></div><div className="case-copy"><p className="eyebrow">{selectedProject.number} / {selectedProject.meta}</p><h2 id="case-study-title">{selectedProject.title}</h2><p id="case-study-detail">{selectedProject.detail}</p><div className="case-tags">{selectedProject.tags.map(tag => <span key={tag}>{tag}</span>)}</div><strong><ArrowRight size={16}/> {selectedProject.outcome}</strong><span className="case-footer-note">Selected concept / 2026</span></div></article></div>}
   </main>
 }
