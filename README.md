@@ -95,7 +95,16 @@ The repository also includes `render.yaml` for the API-backed deployment. GitHub
 - [x] Public hosting URL (GitHub Pages client demo)
 - [x] GitHub repository URL
 - [x] Final desktop and mobile views verified in the live browser (hero, skills, experience, projects, contact)
-- [ ] Optional walkthrough video (not included; the hosted demo is the primary walkthrough)
+- [x] Optional walkthrough video — [ARUN.S launch film](./docs/media/arun-s-launch-film.mp4)
+
+## Launch film
+
+The repository includes a Remotion source composition and a finished product-launch film built around the real ARUN.S experience. The cut combines the newspaper-inspired cover, the interactive Three.js/GLB reader, skills and build details, project matrix, animated narration callouts, and a closing thank-you to Auspify Technologies.
+
+- [Play/download the final MP4](./docs/media/arun-s-launch-film.mp4)
+- [View the poster frame](./docs/media/arun-s-launch-film-poster.jpg)
+- [Read the video production notes](./docs/launch-video.md)
+- [Open the Remotion source](./video/arun-launch-film/src/index.jsx)
 
 ## Credits
 
