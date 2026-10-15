@@ -27,6 +27,7 @@ This project was conceived, designed, implemented, documented, tested, and prepa
 - Supplied GLB figure integrated through Three.js
 - Production build verified with `npm run build`
 - README, architecture notes, deployment manifest, and CI workflow
+- Final desktop and mobile screenshots: [`task-1-desktop.jpg`](../docs/screenshots/task-1-desktop.jpg) and [`task-1-mobile.jpg`](../docs/screenshots/task-1-mobile.jpg)
 - Public GitHub repository published at the link above
 - Public GitHub Pages demo published through the repository workflow
 
