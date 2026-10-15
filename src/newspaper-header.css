@@ -109,7 +109,7 @@
 .newspaper-hero .cv-download:hover { background: var(--blue); color: var(--sand); transform: translateY(-2px); }
 .newspaper-hero .cv-download svg { transition: transform .25s ease; }
 .newspaper-hero .cv-download:hover svg { transform: translateY(2px); }
-.newspaper-hero .character-scene { position: absolute; z-index: 3; left: 6%; right: auto; top: 18%; width: min(12vw, 160px); height: min(12vw, 160px); aspect-ratio: 1 / 1; pointer-events: auto; filter: saturate(.9) contrast(1.06); border: 0; background: radial-gradient(circle at 54% 42%, rgba(40, 87, 255, .12), transparent 58%); transform-origin: 72% 76%; }
+.newspaper-hero .character-scene { position: absolute; z-index: 3; left: clamp(32px, 6vw, 115px); right: auto; top: clamp(150px, 20vh, 250px); width: clamp(118px, 10.5vw, 208px); height: clamp(118px, 10.5vw, 208px); aspect-ratio: 1 / 1; pointer-events: auto; filter: saturate(.9) contrast(1.06); border: 0; background: radial-gradient(ellipse at 50% 84%, rgba(6, 43, 138, .24), transparent 53%), radial-gradient(circle at 54% 42%, rgba(40, 87, 255, .12), transparent 58%); transform-origin: 72% 76%; }
 .newspaper-hero .character-scene::after { content: 'FIG. 02 / LEANING INTO THE WORK'; position: absolute; left: 7%; bottom: -16px; color: var(--blue); font: 9px 'TikTok Sans'; letter-spacing: .06em; pointer-events: none; white-space: nowrap; }
 .newspaper-hero .character-scene canvas { position: absolute; inset: 0; display: block; width: 100%; height: 100%; opacity: 1; }
 .newspaper-hero .character-scene-fallback { background: url('/images/arun-pole-reader.png') center / cover no-repeat; }
@@ -117,7 +117,7 @@
 @media (prefers-reduced-motion: reduce) { .newspaper-hero .character-scene { filter: saturate(.82) contrast(1.05); } }
 @media (max-width: 750px) {
   .newspaper-hero { min-height: 1040px; }
-  .newspaper-hero .character-scene { left: 5%; right: auto; top: 20%; transform: none; width: min(19vw, 125px); height: min(19vw, 125px); opacity: .98; z-index: 3; background: radial-gradient(circle at 54% 42%, rgba(40, 87, 255, .15), transparent 58%), rgba(230, 224, 209, .2); }
+  .newspaper-hero .character-scene { left: 5%; right: auto; top: 20%; transform: none; width: min(19vw, 125px); height: min(19vw, 125px); opacity: .98; z-index: 3; background: radial-gradient(ellipse at 50% 84%, rgba(6, 43, 138, .2), transparent 53%), radial-gradient(circle at 54% 42%, rgba(40, 87, 255, .15), transparent 58%), rgba(230, 224, 209, .2); }
   .newspaper-hero .character-scene::after { display: none; }
   .newspaper-hero .hero-portrait { z-index: 1; opacity: .18; }
 }
