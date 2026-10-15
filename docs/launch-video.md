@@ -4,7 +4,7 @@
 
 This 25-second product-launch video presents the assigned Auspify Technologies Task 1 project as a real product story rather than a generic portfolio slideshow.
 
-The video is an individual delivery by Arun S. It uses the actual portfolio interface, project assets, verified implemented features, and the final solo project narrative.
+The video is an individual delivery by Rashad. It presents the fictional ARUN.S portfolio persona using the actual project interface, project assets, verified implemented features, and the final solo project narrative.
 
 ## Story beats
 

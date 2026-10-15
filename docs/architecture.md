@@ -4,7 +4,7 @@
 
 The project is a Vite-built React client with an Express server around the production output. The client owns the portfolio experience and loads the supplied GLB lazily through Three.js. The server owns static delivery and the contact API boundary.
 
-This architecture, implementation, and delivery setup were completed individually by Arun S. for Auspify Technologies Task 1.
+This architecture, implementation, and delivery setup were completed individually by Rashad for Auspify Technologies Task 1. Arun S. / ARUN.S is only the fictional portfolio persona represented by the interface.
 
 ```text
 Browser
