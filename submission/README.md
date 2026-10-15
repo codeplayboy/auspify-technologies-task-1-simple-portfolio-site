@@ -13,7 +13,7 @@ This project was conceived, designed, implemented, documented, tested, and prepa
 - GitHub repository: https://github.com/codeplayboy/auspify-technologies-task-1-simple-portfolio-site
 - Public hosting URL: https://codeplayboy.github.io/auspify-technologies-task-1-simple-portfolio-site/
 - Final verification: desktop and mobile views checked live across the hero, skills, experience, projects, and contact sections.
-- Optional walkthrough video: [ARUN.S launch film](../docs/media/arun-s-launch-film.mp4)
+- Optional walkthrough video: [watch ARUN.S launch film](https://github.com/codeplayboy/auspify-technologies-task-1-simple-portfolio-site/raw/refs/heads/main/docs/media/arun-s-launch-film.mp4) with [cinematic thumbnail](../docs/media/arun-s-launch-film-thumbnail.png)
 - API-backed hosting: Render deployment prepared in `render.yaml`; account connection remains optional for the assignment demo
 
 ## Delivered requirements

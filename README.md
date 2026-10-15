@@ -102,7 +102,7 @@ The repository also includes `render.yaml` for the API-backed deployment. GitHub
 - [x] GitHub repository URL
 - [x] Final screenshots — [desktop](./docs/screenshots/task-1-desktop.jpg) and [mobile](./docs/screenshots/task-1-mobile.jpg)
 - [x] Final desktop and mobile views verified in the live browser (hero, skills, experience, projects, contact)
-- [x] Optional walkthrough video — [ARUN.S launch film](./docs/media/arun-s-launch-film.mp4)
+- [x] Optional walkthrough video — [ARUN.S launch film](https://github.com/codeplayboy/auspify-technologies-task-1-simple-portfolio-site/raw/refs/heads/main/docs/media/arun-s-launch-film.mp4)
 
 ## Final screenshots
 
@@ -117,8 +117,16 @@ The delivery package includes captures of the deployed portfolio at two review s
 
 The repository includes a Remotion source composition and a finished product-launch film built around the real ARUN.S experience. The cut combines the newspaper-inspired cover, the interactive Three.js/GLB reader, skills and build details, project matrix, animated narration callouts, and a closing thank-you to Auspify Technologies.
 
-- [Play/download the final MP4](./docs/media/arun-s-launch-film.mp4)
-- [View the poster frame](./docs/media/arun-s-launch-film-poster.jpg)
+### Watch the film
+
+[![Watch the ARUN.S launch film](./docs/media/arun-s-launch-film-thumbnail.png)](https://github.com/codeplayboy/auspify-technologies-task-1-simple-portfolio-site/raw/refs/heads/main/docs/media/arun-s-launch-film.mp4)
+
+Click the thumbnail to open the MP4 directly in the browser. If GitHub’s file viewer does not show inline playback for the current browser, the raw MP4 URL will still open the native browser player or download the verified file.
+
+- [Open the raw MP4 in the browser](https://github.com/codeplayboy/auspify-technologies-task-1-simple-portfolio-site/raw/refs/heads/main/docs/media/arun-s-launch-film.mp4)
+- [Download the final MP4](./docs/media/arun-s-launch-film.mp4)
+- [View the original poster frame](./docs/media/arun-s-launch-film-poster.jpg)
+- [View the cinematic thumbnail](./docs/media/arun-s-launch-film-thumbnail.png)
 - [Read the video production notes](./docs/launch-video.md)
 - [Open the Remotion source](./video/arun-launch-film/src/index.jsx)
 
