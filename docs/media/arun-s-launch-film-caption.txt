@@ -1,0 +1,5 @@
+I built ARUN.S for Auspify Technologies Task 1 — an editorial full-stack portfolio where a newspaper-inspired cover opens into real sections, interactive Three.js detail, mock product case studies, CV download, and a contact flow. Built with curiosity. Driven by engineering. Inspired to keep learning.
+
+Special thanks to Auspify Technologies for the opportunity to learn, build, and demonstrate my skills.
+
+#Auspify #AuspifyTechnologies #AuspifyInternship #AuspifyProjects
