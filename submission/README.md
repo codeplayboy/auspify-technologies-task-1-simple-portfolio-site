@@ -4,12 +4,16 @@
 
 **Auspify Technologies Task - 1 (Simple Portfolio Site)**
 
+## Individual submission
+
+This project was conceived, designed, implemented, documented, tested, and prepared for delivery by Arun S. as an individual submission. The visual system, React interface, responsive behavior, Three.js character scene, Express contact boundary, deployment configuration, and optional walkthrough video are part of the same solo project.
+
 ## Links
 
 - GitHub repository: https://github.com/codeplayboy/auspify-technologies-task-1-simple-portfolio-site
 - Public hosting URL: https://codeplayboy.github.io/auspify-technologies-task-1-simple-portfolio-site/
 - Final verification: desktop and mobile views checked live across the hero, skills, experience, projects, and contact sections.
-- Optional walkthrough video: not included; the hosted demo and repository documentation provide the delivery walkthrough.
+- Optional walkthrough video: [ARUN.S launch film](../docs/media/arun-s-launch-film.mp4)
 - API-backed hosting: Render deployment prepared in `render.yaml`; account connection remains optional for the assignment demo
 
 ## Delivered requirements
@@ -32,6 +36,6 @@ The project names, company names, experience timeline, and case-study outcomes a
 
 ## Special thanks
 
-Special thanks to **Auspify Technologies** for giving me the opportunity to complete this full-stack development task and for providing a brief that encouraged both technical depth and visual presentation.
+Special thanks to **Auspify Technologies** for giving me the opportunity to learn, build, and demonstrate my skills through this task, and for providing a brief that encouraged both technical depth and visual presentation.
 
 `#Auspify` `#AuspifyTechnologies` `#AuspifyInternship` `#AuspifyProjects`
