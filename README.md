@@ -19,7 +19,7 @@ An editorial, responsive personal portfolio website for the Auspify Technologies
 
 ## Authorship and delivery
 
-This is Arun S.'s individual Task 1 submission. The concept, visual direction, content structure, interface design, React implementation, Three.js integration, Express API boundary, responsive behavior, documentation, deployment setup, and launch-film production were completed as one solo project for the Auspify Technologies internship brief.
+This is Rashad's individual Task 1 submission. Arun S. / ARUN.S is the fictional portfolio persona used inside this mock project; Rashad is the real creator and submitter. The concept, visual direction, content structure, interface design, React implementation, Three.js integration, Express API boundary, responsive behavior, documentation, deployment setup, and launch-film production were completed as one solo project for the Auspify Technologies internship brief.
 
 The fictional company names, sample work history, and mock case studies are clearly labelled as portfolio content created for demonstration. They are not presented as claims about real employers or client work.
 
@@ -114,7 +114,7 @@ The repository includes a Remotion source composition and a finished product-lau
 
 ## Credits
 
-This project was designed and built individually by Arun S. as the Task 1 submission.
+This project was designed and built individually by Rashad as the Task 1 submission, with Arun S. retained as the fictional portfolio character shown in the experience.
 
 Special thanks to **Auspify Technologies** for providing the opportunity to learn, build, and demonstrate these skills through a practical full-stack development task.
 
