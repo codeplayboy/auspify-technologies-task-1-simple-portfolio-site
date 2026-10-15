@@ -1,0 +1,16 @@
+{
+  "name": "arun-s-launch-film",
+  "private": true,
+  "scripts": {
+    "render": "remotion render src/index.jsx ArunLaunchFilm out/brag-remotion.mp4",
+    "studio": "remotion studio src/index.jsx"
+  },
+  "dependencies": {
+    "@remotion/cli": "latest",
+    "@remotion/media": "latest",
+    "@remotion/renderer": "latest",
+    "remotion": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  }
+}
