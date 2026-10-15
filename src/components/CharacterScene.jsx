@@ -27,7 +27,7 @@ export default function CharacterScene() {
           if (cancelled) return
           model = gltf.scene
           const box = new T.Box3().setFromObject(model); const size = box.getSize(new T.Vector3()); const center = box.getCenter(new T.Vector3()); const factor = 3.2 / Math.max(size.y, .001)
-          actor = new T.Group(); actor.position.set(.03, .02, .12); actor.rotation.z = -.16
+          actor = new T.Group(); actor.position.set(.03, .02, .12); actor.rotation.z = -.22
           model.scale.setScalar(factor); model.position.set(-center.x * factor, -box.min.y * factor + .018, -center.z * factor)
           model.traverse(node => { if (!node.isMesh) return; node.castShadow = true; node.receiveShadow = true; const materials = Array.isArray(node.material) ? node.material : [node.material]; materials.forEach(material => { if (!material) return; if ('envMapIntensity' in material) material.envMapIntensity = 1.35; if ('roughness' in material && material.roughness > .9) material.roughness = .82; material.needsUpdate = true }) })
           actor.add(model); scene.add(actor); if (gltf.animations?.length) mixer = new T.AnimationMixer(model)

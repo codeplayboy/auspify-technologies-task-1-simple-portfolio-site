@@ -109,7 +109,7 @@
 .newspaper-hero .cv-download:hover { background: var(--blue); color: var(--sand); transform: translateY(-2px); }
 .newspaper-hero .cv-download svg { transition: transform .25s ease; }
 .newspaper-hero .cv-download:hover svg { transform: translateY(2px); }
-.newspaper-hero .character-scene { position: absolute; z-index: 3; left: clamp(32px, 6vw, 115px); right: auto; top: clamp(150px, 20vh, 250px); width: clamp(118px, 10.5vw, 208px); height: clamp(118px, 10.5vw, 208px); aspect-ratio: 1 / 1; pointer-events: auto; filter: saturate(.9) contrast(1.06); border: 0; background: radial-gradient(ellipse at 50% 84%, rgba(6, 43, 138, .24), transparent 53%), radial-gradient(circle at 54% 42%, rgba(40, 87, 255, .12), transparent 58%); transform-origin: 72% 76%; }
+.newspaper-hero .character-scene { position: absolute; z-index: 3; left: clamp(18px, 4vw, 78px); right: auto; top: clamp(120px, 17vh, 215px); width: clamp(155px, 13vw, 250px); height: clamp(155px, 13vw, 250px); aspect-ratio: 1 / 1; pointer-events: auto; filter: saturate(.9) contrast(1.06); border: 0; background: radial-gradient(ellipse at 50% 84%, rgba(6, 43, 138, .28), transparent 53%), radial-gradient(circle at 54% 42%, rgba(40, 87, 255, .12), transparent 58%); transform-origin: 72% 76%; }
 .newspaper-hero .character-scene::after { content: 'FIG. 02 / LEANING INTO THE WORK'; position: absolute; left: 7%; bottom: -16px; color: var(--blue); font: 9px 'TikTok Sans'; letter-spacing: .06em; pointer-events: none; white-space: nowrap; }
 .newspaper-hero .character-scene canvas { position: absolute; inset: 0; display: block; width: 100%; height: 100%; opacity: 1; }
 .newspaper-hero .character-scene-fallback { background: url('/images/arun-pole-reader.png') center / cover no-repeat; }
